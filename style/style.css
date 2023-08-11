@@ -16,11 +16,25 @@ img{
   width: 150px;  
 }
 
+p{
+  text-indent: 15px;
+}
+
 .negrita{
   font-weight: bold;
 }
 
 ul{
   list-style:none;
+}
+
+ul li:nth-child(odd){
+  font-weight: bold;
+  font-style: italic;
+}
+
+ul li:nth-child(even){
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 
