@@ -11,6 +11,13 @@ body{
   padding: 15px;
 }
 
+.encabezado{
+  background-image: url('../img/design1_image1.jpg');
+  height: 250px;
+  background-position: center 80%;
+  
+}
+
 img{
   height: 150px;
   width: 150px;  
@@ -20,8 +27,17 @@ p{
   text-indent: 15px;
 }
 
-.negrita{
+h2.negrita{
   font-weight: bold;
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px;
+}
+
+nav a.sinSubrayado{
+  text-decoration: none;
 }
 
 ul{
