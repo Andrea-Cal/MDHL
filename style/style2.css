@@ -21,6 +21,10 @@ header{
   margin-top: 40px;
 }
 
+#miniLogo{
+  display: none;
+}
+
 #titulo2{
   position: absolute; 
   display: block;

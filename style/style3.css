@@ -1,7 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat&family=Open+Sans:wght@700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Kanit&family=Montserrat&family=Open+Sans:wght@700&family=Raleway:wght@400;700&display=swap');
 
 *{ 
   margin: 0;
   padding: 0;
   box-sizing: border-box
+}
+
+body{
+  font-family: 'Kanit', sans-serif;
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* header */
+
+header{
+  position: relative; 
+  height: 40vh;
+  margin-top: 35px;
+}
+
+#miniLogo{
+  position: fixed; 
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  z-index: 1;
+}
+
+#miniLogo:hover{
+  animation: rotate 1s linear;  
+}
+
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  50%{
+      transform: rotate(180deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+#titulo2{
+  position: absolute; 
+  display: block;
+  font-size: 4em;
+  width: 100%;        
+  top: 0;
+  left: 0;
+  text-align: center; 
+  color: white;
+  background-color: black;  
+}
+
+.encabezado{
+  position: absolute; 
+  display: block;
+  background-image: url('../img/design1_image5.jpg');
+  height: 250px;
+  background-size: 100%;
+  background-position: 0 80%; 
+  width: 100%;
+  top: 90px;
+  left: 0;
+}
+
+#titulo1{
+  color: transparent;
+}
+
+#subtitulo{
+  position: absolute;  
+  width: 100%;
+  top: 340px;
+  left: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+h2.negrita{
+  font-weight: bold;   
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid black; 
+  box-shadow: 2px 5px 5px rgb(110, 110, 110); 
+}
+
+#subtitulo>img{
+  display: none;  
+}
+
+#divNav2{
+  display: inline-block;
+  position: absolute;  
+  top: 84px;
+  right: 15px;  
+  width: 90px;
+  height: 250px; 
+  padding: 45px 0; 
+}
+
+nav a{
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color:rgb(88, 165, 221);  
+  padding: 5px;
+  width: 90px;
+  right: 15px;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 60px;
+  box-shadow: 2px 5px 5px rgb(0, 0, 0); 
+}
+
+nav a.seleccionado{
+  background-color: rgb(87, 189, 87);
+}
+
+nav a:hover{
+  background-color: rgb(58, 121, 166);
+}
+
+
+/* main */
+
+main{
+  position: relative;
+  margin-top: 70px;
+  padding: 40px 20px 0;
+  width: 100%;
+  height: 500px;  
+  box-shadow: 2px 5px 5px rgb(176, 176, 176); 
+}
+
+#divNav1{  
+  display: none;  
+}
+
+#divLogo2{
+  display: inline-block;
+  position: absolute; 
+  left: 50px;
+}
+
+img{
+  display: inline-block;
+  height: 180px;
+  width: 180px;      
+}
+
+p{
+  text-indent: 15px;
+}
+
+#divUl{  
+  position: absolute; 
+  display: inline-block;
+  width: 75%;
+  height: 200px;
+  margin: 15px 0 0; 
+  left: 350px; 
+}
+
+ul{
+  list-style:none;
+  font-size: 1.3em;
+}
+
+ul li:nth-child(odd){
+  font-weight: bold;
+  font-style: italic;
+}
+
+ul li:nth-child(even){
+  padding: 0 0 15px 10px;
+}
+
+#divSection, #divContact{
+  position: absolute; 
+  display: inline-block;
+  width: 75%;
+  height: 500px;  
+  right: 15px;  
+}
+
+section p{
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+
+h3.negrita{
+  font-size: 1.4em;  
+}
+
+#divContact p{
+  margin: 20px 0;
+  font-size: 1.3em;
 }
