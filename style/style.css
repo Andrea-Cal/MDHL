@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat&family=Open+Sans:wght@700&family=Raleway:wght@400;700&display=swap');
 
 *{ 
-  box-sizing: border-box
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -14,8 +16,8 @@ body{
 .encabezado{
   background-image: url('../img/design1_image1.jpg');
   height: 250px;
-  background-position: center 80%;
-  
+  background-position: center 80%; 
+  margin-top: 50px;
 }
 
 h1{
@@ -23,7 +25,20 @@ h1{
   padding-left: 5px;
 }
 
+#subtitulo{
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#subtitulo>img{
+  position: absolute;  
+  top: -50px;
+  left: 900px;
+  background-color: white;  
+}
+
 img{
+  display: inline-block;
   height: 150px;
   width: 150px;  
 }
@@ -41,21 +56,70 @@ h2.negrita{
   padding: 5px;
 }
 
+main{
+  position: relative;
+}
+
+#divNav{
+  position: absolute; 
+  display: inline-block;
+  width: 15%;
+  height: 200px;  
+}
+
+nav a{
+  display: block;
+  padding: 20px 0;
+  font-size: 1.2em; 
+  color: darkblue; 
+}
+
 nav a.seleccionado{
   text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+#divUl{ 
+  position: absolute; 
+  display: inline-block;
+  width: 75%;
+  height: 200px;  
+  margin: 15px 0 0 250px;  
 }
 
 ul{
-  list-style:none;
+  list-style: none;
+  font-size: 1.3em;
 }
 
-ul li:nth-child(odd){
+ul li:nth-child(odd){  
   font-weight: bold;
   font-style: italic;
 }
 
-ul li:nth-child(even){
-  padding-left: 10px;
-  padding-bottom: 15px;
+ul li:nth-child(even){  
+  padding: 0 0 15px 10px;  
 }
 
+#divSection, #divContact{
+  position: absolute; 
+  display: inline-block;
+  width: 75%;
+  height: 500px;  
+  margin-left: 200px;
+}
+
+section p{
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+
+h3.negrita{
+  font-size: 1.4em;  
+}
+
+#divContact p{
+  margin: 20px 0;
+  font-size: 1.3em;
+}
