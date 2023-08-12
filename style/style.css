@@ -13,6 +13,8 @@ body{
   padding: 15px;
 }
 
+/* header */
+
 .encabezado{
   background-image: url('../img/design1_image1.jpg');
   height: 250px;
@@ -20,7 +22,11 @@ body{
   margin-top: 50px;
 }
 
-h1{
+#titulo2{
+  display: none;
+}
+
+#titulo1{
   font-size: 4em;
   padding-left: 5px;
 }
@@ -43,6 +49,10 @@ img{
   width: 150px;  
 }
 
+#divNav2{
+  display: none;
+}
+
 p{
   text-indent: 15px;
 }
@@ -56,15 +66,17 @@ h2.negrita{
   padding: 5px;
 }
 
+/* main */
+
 main{
   position: relative;
 }
 
-#divNav{
+#divNav1{
   position: absolute; 
   display: inline-block;
   width: 15%;
-  height: 200px;  
+  height: 200px;    
 }
 
 nav a{
@@ -78,6 +90,10 @@ nav a.seleccionado{
   text-decoration: none;
   color: black;
   font-weight: 600;
+}
+
+#divLogo2{
+  display: none;
 }
 
 #divUl{ 
@@ -107,7 +123,7 @@ ul li:nth-child(even){
   display: inline-block;
   width: 75%;
   height: 500px;  
-  margin-left: 200px;
+  margin-left: 200px;  
 }
 
 section p{

@@ -13,25 +13,91 @@ body{
   padding: 15px;
 }
 
+/* header */
+
+header{
+  position: relative; 
+  height: 40vh;
+  margin-top: 40px;
+}
+
+#titulo2{
+  position: absolute; 
+  display: block;
+  font-size: 4em;
+  width: 100%;
+  padding-left: 5px;
+  font-style: italic;
+  margin-bottom: 5px;     
+  top: 0;
+  left: 0; 
+}
+
 .encabezado{
+  position: absolute; 
+  display: block;
   background-image: url('../img/design1_image2.jpg');
   height: 250px;
   background-size: 100%;
-  background-position: 0 80%;
-
+  background-position: 0 80%; 
+  width: 100%;
+  top: 80px;
+  left: 0;
 }
 
-h1{
-  font-size: 4em;
-  font-style: italic;
-  margin-bottom: 5px;  
+#titulo1{
+  color: transparent;
 }
 
-figure{
+#subtitulo{
+  position: absolute;  
+  width: 100%;
+  top: 330px;
+  left: 0;
+  margin-bottom: 50px;
+}
+
+#subtitulo>img{
+  display: none;  
+}
+
+#divNav2{
   display: inline-block;
-  height: 160px;
-  width: 160px; 
+  position: absolute;  
+  top: 70px;
+  right: 5px;
+}
 
+nav a{
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color:rgb(88, 165, 221);
+  border: solid 1px black;
+  padding: 5px;
+  width: 110px;
+  text-align: center;
+}
+
+nav a.seleccionado{
+  background-color: rgb(87, 189, 87);
+}
+
+
+/* main */
+
+main{
+  position: relative;
+  margin-top: 80px;
+}
+
+#divNav1{  
+  display: none;  
+}
+
+#divLogo2{
+  display: inline-block;
+  position: absolute; 
 }
 
 img{
@@ -49,32 +115,20 @@ h2.negrita{
   text-align: center;
   margin: 0 auto;
   padding: 5px;
-  border: solid 1px black;
-  
+  border: 1px solid black;  
 }
-
-nav a{
-  text-decoration: none;
-  color: white;
-  background-color:rgb(88, 165, 221);
-  border: solid 1px black;
-  padding: 5px;
-}
-
-nav a.seleccionado{
-  background-color: rgb(87, 189, 87);
-}
-
 
 #divUl{  
+  position: absolute; 
   display: inline-block;
   width: 75%;
-  height: 150px;
-  border: 1px solid blue;
+  height: 200px;
+  margin: 15px 0 0 250px;  
 }
 
 ul{
   list-style:none;
+  font-size: 1.3em;
 }
 
 ul li:nth-child(odd){
@@ -83,6 +137,27 @@ ul li:nth-child(odd){
 }
 
 ul li:nth-child(even){
-  padding-left: 10px;
-  padding-bottom: 15px;
+  padding: 0 0 15px 10px;
+}
+
+#divSection, #divContact{
+  position: absolute; 
+  display: inline-block;
+  width: 75%;
+  height: 500px;  
+  margin-left: 200px;  
+}
+
+section p{
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+
+h3.negrita{
+  font-size: 1.4em;  
+}
+
+#divContact p{
+  margin: 20px 0;
+  font-size: 1.3em;
 }
