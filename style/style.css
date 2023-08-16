@@ -105,7 +105,7 @@ img#logo{
 
 ul#listas-index{
   list-style:none;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 ul#listas-index li:nth-child(odd){
@@ -117,11 +117,11 @@ ul#listas-index li:nth-child(even){
   padding: 0 0 15px 10px;
 }
 
-p, .sangria{
+/* p,  */.sangria{
   text-indent: 15px;
 }
 
-#titular{
+.titular{
   text-align: center;
 }
 
@@ -143,6 +143,19 @@ ul.tipo-circulo li{
 
 .separacion{
   margin-bottom: 15px;
+}
+
+.subrayado{
+  text-decoration: underline;
+}
+
+#contacto{
+  display: flex;
+  justify-content: space-between; 
+}
+
+table{
+  margin: 30px 0;
 }
 
 /* footer */
