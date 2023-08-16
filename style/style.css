@@ -78,17 +78,16 @@ nav a:hover{
 #subtitulo{
   font-size: 1em;
   max-height: 10%;
-  box-shadow: 2px 5px 5px rgb(92, 92, 92); 
-  
+  box-shadow: 2px 5px 5px rgb(92, 92, 92);   
 }
 
 /* main */
 
 main{
-  border: 2px solid red;
-  height: 55vh;
+  border: 2px solid red;  
   display: flex;  
   justify-content: space-between;
+  flex-grow: 1; /* no me funciona */
 }
 
 img{  
@@ -102,20 +101,45 @@ img{
   margin-top: 20px;
   margin-right: 20px;
   border: 2px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
-ul{
+ul#listas-index{
   list-style:none;
   font-size: 1.3em;
 }
 
-ul li:nth-child(odd){
+ul#listas-index li:nth-child(odd){
   font-weight: bold;
   font-style: italic;
 }
 
-ul li:nth-child(even){
+ul#listas-index li:nth-child(even){
   padding: 0 0 15px 10px;
+}
+
+p, .sangria{
+  text-indent: 15px;
+}
+
+#titular{
+  text-align: center;
+}
+
+ul.lista-rules1 li{
+  list-style:none;
+}
+
+.corrido1{
+  margin-left: 15px;
+}
+.corrido2{
+  margin-left: 25px;
+}
+
+.separacion{
+  margin-bottom: 15px;
 }
 
 /* footer */
@@ -123,13 +147,12 @@ ul li:nth-child(even){
 footer{  
   width: 100%;  
   height: 5vh;   
-  border: 2px solid green;  
-  display: flex; 
-  
+  border: 2px solid green;
+  position: fixed;
+  bottom: 0; 
 }
 
 h6{
   height: 100%;
-  padding-top: 7px;
-  
+  padding-top: 7px;  
 }
