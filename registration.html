@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="icon" type="image/png" href="./img/sport_hockey_filled_icon_201864.png"> 
+  <title>Registration Form</title>
+</head>
+<body>
+  <header>
+    <!-- titulo -->
+    <div id="titulo">
+      <h1>Mighty Ducks Hockey League</h1>
+    </div>
+
+    <!-- imagen de fondo + nav -->
+    <div class="img-encabezado">
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./game_info.html">Game info</a>
+        <a href="./rules.html">Rules</a>        
+        <a href="#" class="seleccionado">Registration</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>    
+
+    <!-- subtitulo -->
+    <div id="subtitulo">
+      <h2>Registration Form</h2>
+    </div>    
+  </header>
+
+  <main>
+    <div id="contenedor-main">
+    
+      <!-- imagen logo movil -->
+      <img src="./img/Logo_Mighty_ducks_01.png" id="logo" alt="MDHL logo">
+      
+      <!-- informacion a mostrar -->
+      <div id="informacion">
+
+        <form action="./show_data.html" method="get">
+
+          <fieldset>
+            <label for="fname">Player’s First Name:</label>
+          <input type="text" id="fname" name="first_name">
+
+          <label for="lname">Player’s Last Name:</label>
+          <input type="text" id="lname" name="last_name"><br>
+
+          <label for="street">Street Address:</label>
+          <input type="text" id="street" name="street"><br>
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city">
+
+          <label for="zcode">Zip Code:</label>
+          <input type="text" id="zcode" name="zip_code"><br>
+
+          <label for="bdate">Birth Date:</label>
+          <input type="date" id="bdate" name="birth_date">          
+
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label><br>
+          
+          <input type="radio" id="preschool" name="grade" value="Pre-School">
+          <label for="preschool">Pre-School</label>
+          <input type="radio" id="1st" name="grade" value="1st">
+          <label for="1st">1st</label>
+          <input type="radio" id="2nd" name="grade" value="2nd">
+          <label for="2nd">2nd</label>
+          <input type="radio" id="3rd" name="grade" value="3rd">
+          <label for="3rd">3rd</label>
+          <input type="radio" id="4th" name="grade" value="4th">
+          <label for="4th">4th</label>
+          <input type="radio" id="5th" name="grade" value="5th">
+          <label for="5th">5th</label>
+
+          </fieldset>
+
+          
+
+
+          <input type="submit" value="enviar">
+
+        </form>
+        
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <h6>2023 - Mighty Ducks Hockey League - All rights reserved</h6>
+  </footer>
+
+</body>
+</html>
