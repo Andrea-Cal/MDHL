@@ -156,12 +156,13 @@ ul.tipo-circulo li{
   justify-content: space-between; 
 }
 
-table{
+table, #contenedor-mapas{
   margin: 30px 0;
 }
 
-td{
+table, td, th{
   text-align: center;
+  border: 1px solid black;
 }
 
 fieldset{
@@ -221,6 +222,19 @@ fieldset{
   box-shadow: 2px 5px 5px rgb(92, 92, 92);
 }
 
+.mapas{
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+iframe{
+  width: 250px;
+  height: 250px;
+  margin: 10px 20px 20px;
+}
+
 /* footer */
 
 footer{  
@@ -234,19 +248,3 @@ h6{
   height: 100%;
   padding-top: 7px;  
 }
-
-/* feedback list */
-
-/* #feedback-list{
-  border: 1px solid red;
-  display: flex;  
-  justify-content: center;
-  align-self: center;
-  width: 50%;
-}
-
-.th-tabla{
-  border: 2px solid rgb(101, 255, 144);
-  width: 50%;
-} */
-
