@@ -166,14 +166,21 @@ table, td, th{
 }
 
 fieldset{
-  border: 0px;
+  border: 0px;  
+}
+
+#fieldset1{  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .linea-input{
   border-top: 0;
   border-left: 0;
-  border-right: 0;
-  width: 25%;  
+  border-right: 0;  
+  margin: 0 8px;
+  width: 250px;  
 }
 
 .distancia{  
@@ -191,14 +198,8 @@ fieldset{
   margin-right: 70px;  
 }
 
-.div3{
-  width: 100%;
+.div3{  
   display: flex;
-  flex-direction: column;    
-}
-
-.div4{
-  display: flex;  
 }
 
 .div1>p, .div1 label{
@@ -248,3 +249,5 @@ h6{
   height: 100%;
   padding-top: 7px;  
 }
+
+
