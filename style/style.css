@@ -44,6 +44,14 @@ header{
   width: 100%; 
 }
 
+img#logo-mini{
+  display: none;
+}
+
+.icon{
+  display: none;
+}
+
 nav{  
   height: 100%;  
   display: flex;
@@ -130,6 +138,10 @@ ul.sin-deco li{
   list-style:none;
 }
 
+.margen{
+  padding-left: 20px;
+}
+
 .margen1{
   margin-left: 15px;
 }
@@ -175,8 +187,6 @@ fieldset{
   width: 100%;
 }
 
-
-
 .linea-input{
   border-top: 0;
   border-left: 0;
@@ -208,10 +218,6 @@ fieldset{
   padding-right: 8px;
 }
 
-.margen{
-  padding-left: 20px;
-}
-
 #botonSubmit{
   background-color: rgb(87, 189, 87);
   font-size: 0.8em; 
@@ -226,7 +232,7 @@ fieldset{
 }
 
 .mapas{
-  margin: 20px;
+  margin: 20px 0;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -252,3 +258,93 @@ h6{
   padding-top: 7px;  
 }
 
+/* media queries */
+
+@media only screen and (max-width: 999px){
+  .div-organizador1{
+    flex-direction: column;
+  }
+  .margen{
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 860px){
+  #titulo{
+    font-size: 1.5em;    
+  }
+  #subtitulo{
+    font-size: 0.8em;       
+  }
+  iframe{
+    width: 200px;
+    height: 200px;    
+  }
+}
+
+@media only screen and (max-width: 725px){
+  #titulo{
+    font-size: 1.3em;    
+  }
+  img#logo{  
+    height: 120px;
+    width: 120px; 
+    margin: 20px 20px 0;  
+  }  
+  iframe{    
+    margin: 10px 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 620px){
+  #titulo{
+    font-size: 1em;    
+  }
+  #subtitulo{
+    font-size: 0.7em;       
+  }
+  .mapas{       
+    flex-direction: column;
+    align-items: center;
+  }
+  iframe{
+    width: 300px;        
+  }
+  .div-organizador2{
+    display: flex;  
+    flex-direction: column;    
+    align-items: flex-start;   
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #titulo{
+    font-size: 0.8em;    
+  }    
+  img#logo{  
+    display: none;  
+  }
+  #informacion{
+    width: 100%;
+    margin: 20px 20px 40px 20px;    
+  }
+  .img-encabezado{
+    display: flex;
+    justify-content: space-between;
+  }
+  img#logo-mini{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+  }
+  .icon{
+    display: inline-block;
+    margin: 5px 12px;
+  }
+  nav{
+    display: none;
+  }
+}
+
+  

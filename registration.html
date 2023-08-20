@@ -16,6 +16,14 @@
 
     <!-- imagen de fondo + nav -->
     <div class="img-encabezado">
+      <img src="./img/Logo_Mighty_ducks_01.png" id="logo-mini" alt="MDHL logo">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M4 6l16 0" />
+        <path d="M4 12l16 0" />
+        <path d="M4 18l16 0" />
+      </svg> 
+      
       <nav>
         <a href="./index.html">Home</a>
         <a href="./about.html">About</a>
@@ -45,42 +53,34 @@
 
           <fieldset class="espacio-inf" id="fieldset1">            
             <div class="div-organizador1">
-              <label>Player’s First Name:<input type="text" id="fname" name="first_name" class="linea-input"></label>
-              <label>Last Name:<input type="text" id="lname" name="last_name" class="linea-input"></label>                  
+              <label><b>Player’s First Name:</b><input type="text" id="fname" name="first_name" class="linea-input"></label>
+              <label><b>Last Name:</b><input type="text" id="lname" name="last_name" class="linea-input"></label>                  
             </div>
             <div class="div-organizador1">
-              <label>Street Address:<input type="text" id="street" name="street" class="linea-input"></label>              
+              <label><b>Street Address:</b><input type="text" id="street" name="street" class="linea-input"></label>              
             </div>           
             <div class="div-organizador1">
-              <label>City:<input type="text" id="city" name="city" class="linea-input"></label>                  
-              <label>Zip Code:<input type="text" id="zcode" name="zip_code" class="linea-input"></label>                  
+              <label><b>City:</b><input type="text" id="city" name="city" class="linea-input"></label>                  
+              <label><b>Zip Code:</b><input type="text" id="zcode" name="zip_code" class="linea-input"></label>                  
             </div>
-            <div class="div-organizador1">
-              <label for="bdate">Birth Date:</label>
-              <input type="date" id="bdate" name="birth_date" class="linea-input">                
-              <div class="div-organizador2 margen1">            
-                <p>Gender:</p>
-                <input type="radio" id="female" name="gender" value="Female">
-                <label for="female">Female</label>
-                <input type="radio" id="male" name="gender" value="Male">
-                <label for="male">Male</label>
+            <div class="div-organizador1">              
+              <label><b>Birth Date:</b><input type="date" id="bdate" name="birth_date" class="linea-input"></label>
+              
+              <div class="div-organizador2 margen">            
+                <p><b>Gender:</b></p>                               
+                <label><input type="radio" id="female" name="gender" value="Female"> Female</label>
+                <label><input type="radio" id="male" name="gender" value="Male"> Male</label>
               </div>
             </div>              
 
             <div class="div-organizador2">
-              <p>Grade:</p>
-              <input type="radio" id="preschool" name="grade" value="Pre-School">
-              <label for="preschool">Pre-School</label>
-              <input type="radio" id="1st" name="grade" value="1st">
-              <label for="1st">1st</label>
-              <input type="radio" id="2nd" name="grade" value="2nd">
-              <label for="2nd">2nd</label>
-              <input type="radio" id="3rd" name="grade" value="3rd">
-              <label for="3rd">3rd</label>
-              <input type="radio" id="4th" name="grade" value="4th">
-              <label for="4th">4th</label>
-              <input type="radio" id="5th" name="grade" value="5th">
-              <label for="5th">5th</label>
+              <p><b>Grade:</b></p>              
+              <label><input type="radio" id="preschool" name="grade" value="Pre-School"> Pre-School</label>              
+              <label><input type="radio" id="1st" name="grade" value="1st"> 1st</label>              
+              <label><input type="radio" id="2nd" name="grade" value="2nd"> 2nd</label>              
+              <label><input type="radio" id="3rd" name="grade" value="3rd"> 3rd</label>              
+              <label><input type="radio" id="4th" name="grade" value="4th"> 4th</label>              
+              <label><input type="radio" id="5th" name="grade" value="5th"> 5th</label>
             </div>          
           </fieldset>            
 
@@ -131,13 +131,10 @@
 
           <fieldset class="espacio-inf">
             <h3>Permision to play</h3>
-            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the program and/or being transported to or from MDHL sponsored activities.
+            <p class="espacio-inf">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the program and/or being transported to or from MDHL sponsored activities.
             By entering my name below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
-            <label for="signature">Parent/Guardian Signature:</label>
-            <input type="text" id="signature" name="signature" class="linea-input"><br>
-
-            <label for="date">Date:</label>
-            <input type="text" id="date" name="date" class="linea-input"><br>
+            <label><b>Parent/Guardian Signature:</b><input type="text" id="signature" name="signature" class="linea-input"></label><br>
+            <label><b>Date:</b><input type="text" id="date" name="date" class="linea-input"></label>            
           </fieldset>
 
           <input type="submit" value="Enviar" id="botonSubmit" class="espacio-inf">
